@@ -75,7 +75,7 @@ public class PetTest {
         response.then().body("tags[0].id", equalTo(id));
         response.then().body("status", equalTo("available"));
 
-        log.info("************************* TESTCASE 2 COMPLETED ***********lksdfjkljslkjfkldsjfkldsjkl*************");
+        log.info("************************* TESTCASE 2 COMPLETED ************************");
  
     }
 
