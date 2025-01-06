@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-06T16:03:25 IST" name="API Test Suite" finished-at="2025-01-06T16:03:31 IST" duration-ms="6470">
+    <groups>
+    </groups>
+    <test started-at="2025-01-06T16:03:25 IST" name="User API Tests" finished-at="2025-01-06T16:03:31 IST" duration-ms="6470">
+      <class name="api_test.PetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api_test.PetTest@4ebea12c]" started-at="2025-01-06T16:03:25 IST" name="setup" finished-at="2025-01-06T16:03:25 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="find_pet_by_id_also_validate_statusCode()[pri:1, instance:api_test.PetTest@4ebea12c]" started-at="2025-01-06T16:03:25 IST" name="find_pet_by_id_also_validate_statusCode" finished-at="2025-01-06T16:03:27 IST" duration-ms="2798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find_pet_by_id_also_validate_statusCode -->
+        <test-method signature="find_pet_by_id_ando_validate_jsonResponse()[pri:2, instance:api_test.PetTest@4ebea12c]" started-at="2025-01-06T16:03:28 IST" name="find_pet_by_id_ando_validate_jsonResponse" finished-at="2025-01-06T16:03:30 IST" duration-ms="2055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find_pet_by_id_ando_validate_jsonResponse -->
+        <test-method signature="find_pet_by_id_and_validate_jsonSchema()[pri:3, instance:api_test.PetTest@4ebea12c]" started-at="2025-01-06T16:03:30 IST" name="find_pet_by_id_and_validate_jsonSchema" finished-at="2025-01-06T16:03:31 IST" duration-ms="1489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find_pet_by_id_and_validate_jsonSchema -->
+      </class> <!-- api_test.PetTest -->
+    </test> <!-- User API Tests -->
+  </suite> <!-- API Test Suite -->
+</testng-results>
