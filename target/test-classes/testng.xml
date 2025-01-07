@@ -10,6 +10,8 @@
         <classes>
             <!-- Specify the classes you want to run -->
             <class name="api_test.PetTest"/>
+            <class name="api_test.CreatePet"/>
+
             <!-- Add more classes as needed -->
         </classes>
     </test>

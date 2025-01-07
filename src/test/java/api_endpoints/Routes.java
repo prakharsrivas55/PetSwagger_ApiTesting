@@ -6,9 +6,10 @@ public class Routes {
 
     // PET MODEL
     public static String get_pet_url(int id) {
-        // Add '/' between /pet and the id to form the correct URL.
         return base_url + "/pet/" + id;
     }
+
+    public static String post_pet_url= base_url + "/pet";
 
     // STORE MODEL
     // USER MODEL
