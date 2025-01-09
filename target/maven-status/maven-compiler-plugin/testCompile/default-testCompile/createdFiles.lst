@@ -1,4 +1,5 @@
 api_payloads\Pets.class
+api_test\UploadFile.class
 api_test\CreatePet.class
 api_endpoints\PetEndPoints.class
 api_endpoints\Routes.class

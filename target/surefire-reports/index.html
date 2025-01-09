@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +116,26 @@
                         <a href="#" panel-name="suite-API_Test_Suite" title="api_test.CreatePet" class="method navigator-link" hash-for-method="add_pet_InvalidPhotoURL">add_pet_InvalidPhotoURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="api_test.PetTest" class="method navigator-link" hash-for-method="find_pet_by_id_also_validate_statusCode">find_pet_by_id_also_validate_statusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="api_test.PetTest" class="method navigator-link" hash-for-method="find_pet_by_id_and_validate_jsonSchema">find_pet_by_id_and_validate_jsonSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="api_test.PetTest" class="method navigator-link" hash-for-method="find_pet_by_id_ando_validate_jsonResponse">find_pet_by_id_ando_validate_jsonResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Test_Suite" title="api_test.UploadFile" class="method navigator-link" hash-for-method="validUploadFile">validUploadFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-API_Test_Suite -->
                   </li>
                 </ul>
@@ -128,6 +148,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-API_Test_Suite" class="panel API_Test_Suite">
+          <div class="suite-API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api_test.UploadFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validUploadFile">
+                  </a> <!-- validUploadFile -->
+                  <span class="method-name">validUploadFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test_Suite-class-passed -->
+          <div class="suite-API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api_test.PetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="find_pet_by_id_also_validate_statusCode">
+                  </a> <!-- find_pet_by_id_also_validate_statusCode -->
+                  <span class="method-name">find_pet_by_id_also_validate_statusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="find_pet_by_id_and_validate_jsonSchema">
+                  </a> <!-- find_pet_by_id_and_validate_jsonSchema -->
+                  <span class="method-name">find_pet_by_id_and_validate_jsonSchema</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="find_pet_by_id_ando_validate_jsonResponse">
+                  </a> <!-- find_pet_by_id_ando_validate_jsonResponse -->
+                  <span class="method-name">find_pet_by_id_ando_validate_jsonResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test_Suite-class-passed -->
           <div class="suite-API_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,7 +233,9 @@
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;API Test Suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;User API Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;api_test.PetTest&quot;/&gt;
       &lt;class name=&quot;api_test.CreatePet&quot;/&gt;
+      &lt;class name=&quot;api_test.UploadFile&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- User API Tests --&gt;
 &lt;/suite&gt; &lt;!-- API Test Suite --&gt;
@@ -183,7 +249,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">User API Tests (1 class)</span>
+                <span class="test-name">User API Tests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,24 +275,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'add_pet')
-data.setCell(0, 2, 'api_test.CreatePet')
-data.setCell(0, 3, 3256);
+data.setCell(0, 1, 'find_pet_by_id_also_validate_statusCode')
+data.setCell(0, 2, 'api_test.PetTest')
+data.setCell(0, 3, 2895);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'add_pet_InvalidID')
-data.setCell(1, 2, 'api_test.CreatePet')
-data.setCell(1, 3, 1863);
+data.setCell(1, 1, 'validUploadFile')
+data.setCell(1, 2, 'api_test.UploadFile')
+data.setCell(1, 3, 2212);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'add_pet_InvalidPhotoURL')
+data.setCell(2, 1, 'add_pet')
 data.setCell(2, 2, 'api_test.CreatePet')
-data.setCell(2, 3, 1199);
+data.setCell(2, 3, 1763);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'find_pet_by_id_and_validate_jsonSchema')
+data.setCell(3, 2, 'api_test.PetTest')
+data.setCell(3, 3, 1746);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'find_pet_by_id_ando_validate_jsonResponse')
+data.setCell(4, 2, 'api_test.PetTest')
+data.setCell(4, 3, 1264);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'add_pet_InvalidID')
+data.setCell(5, 2, 'api_test.CreatePet')
+data.setCell(5, 3, 1147);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'add_pet_InvalidPhotoURL')
+data.setCell(6, 2, 'api_test.CreatePet')
+data.setCell(6, 3, 1103);
 window.suiteTableData['API_Test_Suite']= { tableData: data, tableDiv: 'times-div-API_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-API_Test_Suite">
               </div> <!-- times-div-API_Test_Suite -->
             </div> <!-- times-div -->
@@ -252,22 +334,64 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">api_test.CreatePet</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">api_test.PetTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">add_pet</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-name">find_pet_by_id_also_validate_statusCode</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api_test.CreatePet</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2999 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">add_pet</span>
+                <span class="method-start">3001 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api_test.UploadFile</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4766 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validUploadFile</span>
+                <span class="method-start">4768 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api_test.PetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">find_pet_by_id_ando_validate_jsonResponse</span>
+                <span class="method-start">6985 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api_test.CreatePet</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">add_pet_InvalidID</span>
-                <span class="method-start">3352 ms</span>
+                <span class="method-start">8252 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api_test.PetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">find_pet_by_id_and_validate_jsonSchema</span>
+                <span class="method-start">9401 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api_test.CreatePet</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">add_pet_InvalidPhotoURL</span>
-                <span class="method-start">5222 ms</span>
+                <span class="method-start">11150 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

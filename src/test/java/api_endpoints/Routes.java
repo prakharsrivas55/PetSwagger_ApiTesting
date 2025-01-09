@@ -11,6 +11,10 @@ public class Routes {
 
     public static String post_pet_url= base_url + "/pet";
 
+    public static String post_upload_image(int id){
+        return base_url + "/pet/" + id + "/uploadImage";
+    }    
+
     // STORE MODEL
     // USER MODEL
 }

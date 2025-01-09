@@ -11,6 +11,7 @@
             <!-- Specify the classes you want to run -->
             <class name="api_test.PetTest"/>
             <class name="api_test.CreatePet"/>
+            <class name="api_test.UploadFile"/>
 
             <!-- Add more classes as needed -->
         </classes>

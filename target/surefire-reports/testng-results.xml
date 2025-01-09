@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-07T16:10:35 IST" name="API Test Suite" finished-at="2025-01-07T16:10:41 IST" duration-ms="6451">
+  <suite started-at="2025-01-09T13:54:14 IST" name="API Test Suite" finished-at="2025-01-09T13:54:26 IST" duration-ms="12280">
     <groups>
     </groups>
-    <test started-at="2025-01-07T16:10:35 IST" name="User API Tests" finished-at="2025-01-07T16:10:41 IST" duration-ms="6451">
-      <class name="api_test.CreatePet">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api_test.CreatePet@42b64ab8]" started-at="2025-01-07T16:10:35 IST" name="setup" finished-at="2025-01-07T16:10:35 IST" duration-ms="25" status="PASS">
+    <test started-at="2025-01-09T13:54:14 IST" name="User API Tests" finished-at="2025-01-09T13:54:26 IST" duration-ms="12280">
+      <class name="api_test.UploadFile">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api_test.UploadFile@649725e3]" started-at="2025-01-09T13:54:19 IST" name="setup" finished-at="2025-01-09T13:54:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="add_pet()[pri:1, instance:api_test.CreatePet@42b64ab8]" started-at="2025-01-07T16:10:35 IST" name="add_pet" finished-at="2025-01-07T16:10:38 IST" duration-ms="3256" status="PASS">
+        <test-method signature="validUploadFile()[pri:1, instance:api_test.UploadFile@649725e3]" started-at="2025-01-09T13:54:19 IST" name="validUploadFile" finished-at="2025-01-09T13:54:21 IST" duration-ms="2212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUploadFile -->
+      </class> <!-- api_test.UploadFile -->
+      <class name="api_test.CreatePet">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api_test.CreatePet@757d6814]" started-at="2025-01-09T13:54:17 IST" name="setup" finished-at="2025-01-09T13:54:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="add_pet()[pri:1, instance:api_test.CreatePet@757d6814]" started-at="2025-01-09T13:54:17 IST" name="add_pet" finished-at="2025-01-09T13:54:19 IST" duration-ms="1763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_pet -->
-        <test-method signature="add_pet_InvalidID()[pri:2, instance:api_test.CreatePet@42b64ab8]" started-at="2025-01-07T16:10:38 IST" name="add_pet_InvalidID" finished-at="2025-01-07T16:10:40 IST" duration-ms="1863" status="PASS">
+        <test-method signature="add_pet_InvalidID()[pri:2, instance:api_test.CreatePet@757d6814]" started-at="2025-01-09T13:54:22 IST" name="add_pet_InvalidID" finished-at="2025-01-09T13:54:23 IST" duration-ms="1147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_pet_InvalidID -->
-        <test-method signature="add_pet_InvalidPhotoURL()[pri:3, instance:api_test.CreatePet@42b64ab8]" started-at="2025-01-07T16:10:40 IST" name="add_pet_InvalidPhotoURL" finished-at="2025-01-07T16:10:41 IST" duration-ms="1199" status="PASS">
+        <test-method signature="add_pet_InvalidPhotoURL()[pri:3, instance:api_test.CreatePet@757d6814]" started-at="2025-01-09T13:54:25 IST" name="add_pet_InvalidPhotoURL" finished-at="2025-01-09T13:54:26 IST" duration-ms="1103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_pet_InvalidPhotoURL -->
       </class> <!-- api_test.CreatePet -->
+      <class name="api_test.PetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api_test.PetTest@743cb8e0]" started-at="2025-01-09T13:54:14 IST" name="setup" finished-at="2025-01-09T13:54:14 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="find_pet_by_id_also_validate_statusCode()[pri:1, instance:api_test.PetTest@743cb8e0]" started-at="2025-01-09T13:54:14 IST" name="find_pet_by_id_also_validate_statusCode" finished-at="2025-01-09T13:54:17 IST" duration-ms="2895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find_pet_by_id_also_validate_statusCode -->
+        <test-method signature="find_pet_by_id_ando_validate_jsonResponse()[pri:2, instance:api_test.PetTest@743cb8e0]" started-at="2025-01-09T13:54:21 IST" name="find_pet_by_id_ando_validate_jsonResponse" finished-at="2025-01-09T13:54:22 IST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find_pet_by_id_ando_validate_jsonResponse -->
+        <test-method signature="find_pet_by_id_and_validate_jsonSchema()[pri:3, instance:api_test.PetTest@743cb8e0]" started-at="2025-01-09T13:54:23 IST" name="find_pet_by_id_and_validate_jsonSchema" finished-at="2025-01-09T13:54:25 IST" duration-ms="1746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find_pet_by_id_and_validate_jsonSchema -->
+      </class> <!-- api_test.PetTest -->
     </test> <!-- User API Tests -->
   </suite> <!-- API Test Suite -->
 </testng-results>

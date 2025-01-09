@@ -15,7 +15,6 @@ public class CreatePet {
 
     private static final Logger log = LogManager.getLogger(CreatePet.class);
 
-
     @BeforeClass
     public void setup(){
 
