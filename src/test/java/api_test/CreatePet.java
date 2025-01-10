@@ -18,7 +18,7 @@ public class CreatePet {
     @BeforeClass
     public void setup(){
 
-        log.info("************************* Petstore Swagger API TEST STARTED ************************");
+        log.info("************************* Petstore Swagger --[CREATEPET.JAVA]-- API TEST STARTED ************************");
 
     }
 

@@ -18,11 +18,12 @@ import io.qameta.allure.Story;
 public class PetTest {
 
     private static final Logger log = LogManager.getLogger(PetTest.class);
+    private int id=10;
 
     @BeforeClass
     public void setup(){
 
-        log.info("************************* Petstore Swagger API TEST STARTED ************************");
+        log.info("************************* Petstore Swagger --[PETTEST.JAVA] -- API TEST STARTED ************************");
 
     }
     
@@ -33,7 +34,7 @@ public class PetTest {
 
         log.info("************************* TESTCASE 1 STARTED ************************");
 
-        int id=10;
+        // int id=10;
         int statusCode;
 
         Response response= PetEndPoints.readpetuser(id);
@@ -65,10 +66,10 @@ public class PetTest {
 
         log.info("************************* TESTCASE 2 STARTED ************************");
 
-        int id=10;
+        // int id=10;
 
         Response response= PetEndPoints.readpetuser(id);
-        response.then().log().all();
+        // response.then().log().all();
         response.then().body("id", equalTo(id));
         response.then().body("category.id", equalTo(id));
         response.then().body("name", equalTo("doggie"));
@@ -84,7 +85,7 @@ public class PetTest {
 
         log.info("************************* TESTCASE 3 STARTED ************************");
 
-        int id=10;
+        // int id=10;
         File PetjsonSchemaFile= new File("src/test/resources/JsonSchemas/PetSchema.json");
         // int statusCode;
 

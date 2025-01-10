@@ -1,8 +1,6 @@
 package api_endpoints;
 
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-
 import static io.restassured.RestAssured.given;
 
 import java.io.File;
@@ -55,6 +53,19 @@ public class PetEndPoints {
         .when()
             .post(Routes.post_upload_image(id));
             
+        return response;
+        
+    }
+
+    public static Response deleteAPet(int id){
+
+        Response response = given()
+
+            .contentType(ContentType.JSON)
+    
+        .when()
+            .delete(Routes.delete_pet(id));
+        
         return response;
         
     }

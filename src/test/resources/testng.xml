@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="API Test Suite" parallel="tests" thread-count="2">
-    <!-- Listener to generate Extent reports -->
-    <!-- <listeners>
-        <listener class-name="api_utilities.ExtentReportManager"/>
-    </listeners> -->
-
-    <!-- Define the test and specify classes to run -->
-    <test name="User API Tests">
+<suite name="Petstore API Test Suite">
+    <test name="Petstore Tests">
         <classes>
-            <!-- Specify the classes you want to run -->
-            <class name="api_test.PetTest"/>
             <class name="api_test.CreatePet"/>
             <class name="api_test.UploadFile"/>
-
-            <!-- Add more classes as needed -->
+            <class name="api_test.PetTest"/>
+            <class name="api_test.DeletePet"/>
         </classes>
     </test>
 </suite>
