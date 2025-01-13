@@ -1,6 +1,8 @@
+api_endpoints\PetEndPoints.class
+api_test\DeletePet.class
+api_test\PetTest.class
 api_payloads\Pets.class
 api_test\UploadFile.class
 api_test\CreatePet.class
-api_endpoints\PetEndPoints.class
+api_test\UpdatePet.class
 api_endpoints\Routes.class
-api_test\PetTest.class

@@ -19,6 +19,12 @@ public class Routes {
         return base_url + "/pet/" + id;
     }
 
+    public static String update_pet = base_url + "/pet";
+
+    public static String updatePetFormData(int id){
+        return base_url + "/pet/" + id;
+    } 
+
     // STORE MODEL
     // USER MODEL
 }

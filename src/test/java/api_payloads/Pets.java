@@ -87,5 +87,32 @@ public class Pets {
         return pet;
 
     }
+
+    public static Map<String, Object> UpdatePetjson(){
+
+        Map<String, Object> category= new HashMap<>();
+        
+        category.put("id", 10);
+        category.put("name", "string");
+
+        Map<String, Object> tag= new HashMap<>();
+
+        tag.put("id", 10);
+        tag.put("name", "string");
+
+        List<Map<String, Object>> tags = Arrays.asList(tag);
+
+        Map<String, Object> pet= new HashMap<>();
+
+        pet.put("id", 10);
+        pet.put("category", category);
+        pet.put("name", "Maddy");
+        pet.put("photoUrls", Arrays.asList("string"));
+        pet.put("tags", tags);
+        pet.put("status", "sold");
+
+        return pet;
+
+    }
     
 }

@@ -69,4 +69,32 @@ public class PetEndPoints {
         return response;
         
     }
+
+    public static Response UpdateAPet(Object Payload){
+
+        Response response = given()
+
+            .contentType(ContentType.JSON)
+            .body(Payload)
+        
+        .when()
+            .put(Routes.update_pet);
+        
+        return response;
+        
+    }
+
+    public static Response UpdatePetData(int id){
+
+        Response response= given()
+
+            .formParam("name", "Reaper")
+            .formParam("status", "Dagger")
+
+        .when()
+            .post(Routes.updatePetFormData(id));
+            
+        return response;
+
+    }
 }
