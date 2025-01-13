@@ -1,0 +1,5 @@
+# Ignore Maven build output directory
+/target/
+
+# Ignore Maven wrapper directory (optional)
+/.mvn/
