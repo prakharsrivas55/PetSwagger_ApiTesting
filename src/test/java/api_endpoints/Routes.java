@@ -28,5 +28,9 @@ public class Routes {
     public static String find_by_status = base_url + "/pet/findByStatus";
 
     // STORE MODEL
+    public static String get_inventory = base_url + "/store/inventory";
+
+    public static String post_order = base_url + "/store/order";
+
     // USER MODEL
 }

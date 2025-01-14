@@ -2,11 +2,9 @@ package api_endpoints;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 import static io.restassured.RestAssured.given;
 import java.io.File;
 import java.util.Map;
-
 import io.restassured.http.ContentType;
 
 public class PetEndPoints {
@@ -50,7 +48,6 @@ public class PetEndPoints {
         Response response= given()
 
             .multiPart("file", file1) 
-            // .param("id", id)
 
         .when()
             .post(Routes.post_upload_image(id));
@@ -113,6 +110,34 @@ public class PetEndPoints {
         
         .when()
             .get(Routes.find_by_status);
+
+        return response;
+
+    }
+
+    /*---------------------------------------- STORE MODEL ----------------------------------------- */
+
+    public static Response GetInventory(){
+
+        Response response = given() 
+
+            .contentType(ContentType.JSON)
+
+        .when()
+            .get(Routes.get_inventory);
+        
+        return response;
+    }
+
+    public static Response CreateOrder(Object Payload){
+
+        Response response = given()
+
+            .contentType(ContentType.JSON)
+            .body(Payload)
+
+        .when()
+            .post(Routes.post_order);
 
         return response;
 
