@@ -9,6 +9,7 @@
             <class name="api_test.UpdatePet"/>
             <class name="api_test.GetInventory"/>
             <class name="api_test.CreateOrder"/>
+            <class name="api_test.DeleteOrder"/>
 
         </classes>
     </test>

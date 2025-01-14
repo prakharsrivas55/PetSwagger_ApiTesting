@@ -105,7 +105,7 @@ public class GetPetData {
         
     }
 
-    /*---------------------------------------------Get Pet by Status---------------------------------------------*/
+    /*--------------------------------------------- Get Pet by Status---------------------------------------------*/
     @Test(priority = 4)
     public void find_pet_by_status(){
 
@@ -140,8 +140,6 @@ public class GetPetData {
         Map<String, String> params = new HashMap<>();
 
         params.put("status", "sold,available,pending");
-        // params.put("status", "available");
-        // params.put("status", "pending");
 
         Response response= PetEndPoints.GetByStatus(params);
 

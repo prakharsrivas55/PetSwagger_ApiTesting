@@ -143,4 +143,27 @@ public class PetEndPoints {
 
     }
     
+    public static Response GetOrderByID(int orderId){
+
+        Response response = given()
+
+            .contentType(ContentType.JSON)
+        
+        .when()
+            .get(Routes.get_order_by_id(orderId));
+
+        return response;
+    }
+
+    public static Response DeleteOrder(int id){
+
+        Response response = given()
+
+            .contentType(ContentType.JSON)
+
+        .when()
+            .delete(Routes.delete_order(id));
+
+        return response;
+    }
 }

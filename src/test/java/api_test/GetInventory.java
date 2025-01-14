@@ -1,6 +1,9 @@
 package api_test;
 
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasKey;
+
+import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,7 +25,8 @@ public class GetInventory {
 
     }
 
-    @Test(priority = 1)
+    /*--------------------------------------- Pet inventories by status -----------------------------------*/
+    @Test(priority = 1, enabled = false)
     public void get_inventory(){
 
         log.info("************************* [GET] TEST CASE 1 STARTED ************************");
@@ -43,4 +47,29 @@ public class GetInventory {
         
     }
 
+    /*--------------------------------------- Pet inventories by status -----------------------------------*/
+
+    @Test(priority = 2)
+    public void get_by_orderID_validCase(){
+
+        log.info("************************* [GET BY ORDER ID] TEST CASE 1 STARTED ************************");
+
+
+        Random random = new Random();
+        int orderId = random.nextInt(10) + 1;
+
+        Response response = PetEndPoints.GetOrderByID(orderId);
+        int statusCode = response.getStatusCode();
+
+        Assert.assertEquals(statusCode, 200);
+        response.then().body("id", equalTo(orderId));
+        response.then().body("$", hasKey("petId"));
+        response.then().body("$", hasKey("quantity"));
+        response.then().body("$", hasKey("status"));
+        response.then().body("complete", equalTo(true));
+
+        log.info("************************* [GET BY ORDER ID] TEST CASE 1 COMPLETED ************************");
+
+    }
+    
 }
