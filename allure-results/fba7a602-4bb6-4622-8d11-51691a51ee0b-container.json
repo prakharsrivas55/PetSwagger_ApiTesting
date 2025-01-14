@@ -1,1 +1,0 @@
-{"uuid":"fba7a602-4bb6-4622-8d11-51691a51ee0b","name":"api_test.GetInventory","children":["5165eee4-2fb9-4c58-8806-2e7882d61af2"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1736854426714,"stop":1736854426714}],"afters":[],"start":1736854368407,"stop":1736854432335}

@@ -26,7 +26,7 @@ public class GetInventory {
     }
 
     /*--------------------------------------- Pet inventories by status -----------------------------------*/
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1)
     public void get_inventory(){
 
         log.info("************************* [GET] TEST CASE 1 STARTED ************************");
@@ -54,11 +54,12 @@ public class GetInventory {
 
         log.info("************************* [GET BY ORDER ID] TEST CASE 1 STARTED ************************");
 
-
         Random random = new Random();
         int orderId = random.nextInt(10) + 1;
 
         Response response = PetEndPoints.GetOrderByID(orderId);
+
+        if(orderId != 1){
         int statusCode = response.getStatusCode();
 
         Assert.assertEquals(statusCode, 200);
@@ -67,6 +68,24 @@ public class GetInventory {
         response.then().body("$", hasKey("quantity"));
         response.then().body("$", hasKey("status"));
         response.then().body("complete", equalTo(true));
+
+        log.info("Status Code={} - Success", statusCode);
+
+        }
+
+        else{
+            
+        int statusCode = response.getStatusCode();
+        Assert.assertEquals(statusCode, 404);
+
+
+        log.info("Status Code={} - Error", statusCode);
+
+        response.then().body("code", equalTo(1));
+        response.then().body("type", equalTo("error"));
+        response.then().body("message", equalTo("Order not found"));
+        
+        }
 
         log.info("************************* [GET BY ORDER ID] TEST CASE 1 COMPLETED ************************");
 
