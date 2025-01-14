@@ -21,7 +21,7 @@ public class UploadFile {
     }
 
     @Test(priority = 1)
-    public void validUploadFile(){
+    public void valid_Upload_File(){
         
         log.info("************************* [Upload File] TESTCASE 1 STARTED ************************");
 

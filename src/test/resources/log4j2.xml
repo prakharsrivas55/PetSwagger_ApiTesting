@@ -14,7 +14,7 @@
         </Root>
         
         <!-- Optionally, you can define other specific loggers (e.g., for your classes) -->
-        <Logger name="api_test.PetTest" level="DEBUG" additivity="false">
+        <Logger name="api_test.GetPetData" level="DEBUG" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
     </Loggers>

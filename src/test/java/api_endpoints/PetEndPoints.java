@@ -1,9 +1,11 @@
 package api_endpoints;
 
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
+import io.restassured.specification.RequestSpecification;
 
+import static io.restassured.RestAssured.given;
 import java.io.File;
+import java.util.Map;
 
 import io.restassured.http.ContentType;
 
@@ -92,9 +94,28 @@ public class PetEndPoints {
             .formParam("status", "Dagger")
 
         .when()
-            .post(Routes.updatePetFormData(id));
+            .post(Routes.update_Pet_FormData(id));
             
         return response;
 
     }
+
+    public static Response GetByStatus(Map<String, String> queryParams){
+
+        RequestSpecification request = given();
+            
+        for(Map.Entry<String, String> entry : queryParams.entrySet()){
+            
+            request.queryParams(entry.getKey(), entry.getValue());
+        } 
+        
+        Response response = request
+        
+        .when()
+            .get(Routes.find_by_status);
+
+        return response;
+
+    }
+    
 }

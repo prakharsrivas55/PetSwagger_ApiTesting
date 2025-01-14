@@ -21,18 +21,18 @@ public class DeletePet {
 
     }
 
-    public void beforeDeletePet(){
+    public void before_Deleting_pet(){
 
         CreatePet createPet = new CreatePet();
         createPet.add_pet();
     }
     
         @Test(priority = 1)
-        public void deletePet(){
+        public void delete_Pet(){
 
             log.info("************************* [DELETE] TEST CASE 1 STARTED ************************");
 
-            beforeDeletePet();
+            before_Deleting_pet();
             int id =10;
 
             Response response= PetEndPoints.deleteAPet(id);
@@ -45,7 +45,7 @@ public class DeletePet {
         }
 
         @Test(priority = 2)
-        public void PetNotFound(){
+        public void Pet_NotFound(){
 
             log.info("************************* [DELETE] TEST CASE 2 STARTED ************************");
 

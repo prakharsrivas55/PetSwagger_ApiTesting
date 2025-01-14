@@ -26,14 +26,14 @@ public class UpdatePet {
     }
 
     @BeforeMethod
-    public void beforeUpatingPet(){
+    public void before_Upating_Pet(){
 
         CreatePet createPet = new CreatePet();
         createPet.add_pet();
     }
 
     @Test(priority = 1)
-    public void updatePet(){
+    public void update_Pet(){
 
         log.info("************************* [UPDATE] TEST CASE 1 STARTED ************************");
 
@@ -50,7 +50,7 @@ public class UpdatePet {
 
     // Update the Pet using formData
     @Test(priority = 2)
-    public void updatePetViaFormData(){
+    public void update_Pet_Via_FormData(){
 
         log.info("************************* [FORM UPDATE] TEST CASE 1 STARTED ************************");
 
